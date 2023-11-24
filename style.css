@@ -1,0 +1,166 @@
+/*Estilo body*/
+.body{
+    background-color: rgb(255, 75, 75);
+
+}
+
+/*card */
+.imagen-platos {
+    display: flex;
+    margin: auto;
+    padding-top: 10px;
+    width: 80%;
+    height: 80%s;
+    align-content: center;
+    image-rendering: auto;
+}
+.titulo-platos{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 1px;
+}
+.descripcion-platos{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px;
+}
+.precio-platos{
+    text-align: center;
+    font-size: xx-large;
+    text-anchor: middle;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+.agregar-presupuesto{
+    display: flex;
+    margin: auto;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+    color:rgb(43, 40, 39) ;
+    background-color: rgb(251, 215, 72);
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 1px 4px 8px  rgb(43, 40, 39);
+}
+.card{
+  
+   box-shadow: 1px 4px 8px  rgb(43, 40, 39);
+   margin-left: 40%;
+   margin-right: 40%;
+   
+   
+}
+/*Navbar*/
+.nav-container{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: rgb(251, 215, 72);
+}
+
+/*Banner*/
+.banner{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 1px;
+}
+.titulo{
+    text-align: center;
+    font-size: 50px;
+    color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 1px;
+   padding-top: 100px;
+}
+.subtitulo{
+    text-align: center;
+    font-size: 40px;
+    color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 40px;
+}
+
+.titulos-body{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 10px;
+
+}
+
+/*Modal*/
+#modalcontenedor{
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: antiquewhite;
+    background-color: darkslategrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*top*/
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+
+}
+.modal-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: grey;
+    color: antiquewhite;
+    width: 100%;
+}
+.modal-header-titulo{
+    justify-self: start;
+}
+.modal-header-button{
+    cursor: pointer;
+}
+#modalcontenedor > .contenido-modal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+#modalcontenedor > div > img{
+    height: 120px;
+    width: 120px;
+}
+.contenido-presupuesto {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/*boton para borrar/restar/sumar productos del carrito*/
+.borrar-productos {
+    cursor: pointer;
+}
+.sumar{
+    cursor: pointer;
+}
+.restar{
+    cursor: pointer;
+}
+/*contador carrito*/
+.cantidad-carrito {
+    background-color: red;
+    color: antiquewhite;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    top: 37px;
+    right: 14px;
+    position: absolute;
+    display: none;
+}
